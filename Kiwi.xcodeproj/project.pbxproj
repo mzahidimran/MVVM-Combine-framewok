@@ -19,6 +19,7 @@
 		591E295D23D48D2200D2FF8F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E295B23D48D2100D2FF8F /* Message.swift */; };
 		591E296023D4911300D2FF8F /* FlighOfferViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E295F23D4911300D2FF8F /* FlighOfferViewModel.swift */; };
 		591E296323D492D400D2FF8F /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E296223D492D400D2FF8F /* Repository.swift */; };
+		5928C1FD23D66B230096A733 /* Storyboard+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5928C1FC23D66B230096A733 /* Storyboard+Helper.swift */; };
 		595AA44B23D4DEC5000CBB44 /* FlightOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595AA44A23D4DEC5000CBB44 /* FlightOfferViewController.swift */; };
 		5960E3B623D342E400586C52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5960E3B523D342E400586C52 /* AppDelegate.swift */; };
 		5960E3B823D342E400586C52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5960E3B723D342E400586C52 /* SceneDelegate.swift */; };
@@ -67,6 +68,7 @@
 		591E295B23D48D2100D2FF8F /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		591E295F23D4911300D2FF8F /* FlighOfferViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlighOfferViewModel.swift; sourceTree = "<group>"; };
 		591E296223D492D400D2FF8F /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		5928C1FC23D66B230096A733 /* Storyboard+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Helper.swift"; sourceTree = "<group>"; };
 		595AA44A23D4DEC5000CBB44 /* FlightOfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOfferViewController.swift; sourceTree = "<group>"; };
 		5960E3B223D342E400586C52 /* Kiwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiwi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5960E3B523D342E400586C52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 				5913294623D5BC6500AC5F33 /* UIControlSubscription.swift */,
 				5913294823D5BCCF00AC5F33 /* UIControlPublisher.swift */,
 				5913294A23D5BD6600AC5F33 /* UIControl+CombineCompatible.swift */,
+				5928C1FC23D66B230096A733 /* Storyboard+Helper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				5960E3E923D35B8D00586C52 /* Router.swift in Sources */,
 				5960E3F823D3782D00586C52 /* Conversion.swift in Sources */,
 				5960E3E723D35B1300586C52 /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				5928C1FD23D66B230096A733 /* Storyboard+Helper.swift in Sources */,
 				5913294523D4F2CB00AC5F33 /* ImageLoader.swift in Sources */,
 				5913294123D4E8D200AC5F33 /* DateHelperFormat.swift in Sources */,
 				5960E3FD23D3782D00586C52 /* Baglimit.swift in Sources */,

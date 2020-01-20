@@ -51,8 +51,7 @@ class FlightOffersPagedViewController: UIViewController {
     
     private func viewController(at index:Int) -> FlightOfferViewController? {
         guard let flight = model.flight(at: index) else { return nil }
-        
-        let offerViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: String(describing: FlightOfferViewController.self)) as! FlightOfferViewController
+        guard let offerViewController: FlightOfferViewController = Storyboard.main.instantiateViewController() else { return nil }
         offerViewController.set(flightDetail: flight, index: index)
         return offerViewController
     }
