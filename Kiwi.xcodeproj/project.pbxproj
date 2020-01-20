@@ -22,7 +22,7 @@
 		595AA44B23D4DEC5000CBB44 /* FlightOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595AA44A23D4DEC5000CBB44 /* FlightOfferViewController.swift */; };
 		5960E3B623D342E400586C52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5960E3B523D342E400586C52 /* AppDelegate.swift */; };
 		5960E3B823D342E400586C52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5960E3B723D342E400586C52 /* SceneDelegate.swift */; };
-		5960E3BA23D342E400586C52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5960E3B923D342E400586C52 /* ViewController.swift */; };
+		5960E3BA23D342E400586C52 /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5960E3B923D342E400586C52 /* OffersViewController.swift */; };
 		5960E3BD23D342E400586C52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5960E3BB23D342E400586C52 /* Main.storyboard */; };
 		5960E3BF23D342E700586C52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5960E3BE23D342E700586C52 /* Assets.xcassets */; };
 		5960E3C223D342E700586C52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5960E3C023D342E700586C52 /* LaunchScreen.storyboard */; };
@@ -41,7 +41,7 @@
 		5960E3FE23D3782D00586C52 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5960E3F223D3782D00586C52 /* Flight.swift */; };
 		5960E3FF23D3782D00586C52 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5960E3F323D3782D00586C52 /* Route.swift */; };
 		59C51D1423D4C71400B79E45 /* AnyCancelable+DisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C51D1323D4C71400B79E45 /* AnyCancelable+DisposeBag.swift */; };
-		59C51D1723D4D33B00B79E45 /* FlightOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C51D1623D4D33B00B79E45 /* FlightOffersViewController.swift */; };
+		59C51D1723D4D33B00B79E45 /* FlightOffersPagedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C51D1623D4D33B00B79E45 /* FlightOffersPagedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,7 @@
 		5960E3B223D342E400586C52 /* Kiwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiwi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5960E3B523D342E400586C52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5960E3B723D342E400586C52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5960E3B923D342E400586C52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5960E3B923D342E400586C52 /* OffersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
 		5960E3BC23D342E400586C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5960E3BE23D342E700586C52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5960E3C123D342E700586C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		5960E3F223D3782D00586C52 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
 		5960E3F323D3782D00586C52 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		59C51D1323D4C71400B79E45 /* AnyCancelable+DisposeBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyCancelable+DisposeBag.swift"; sourceTree = "<group>"; };
-		59C51D1623D4D33B00B79E45 /* FlightOffersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOffersViewController.swift; sourceTree = "<group>"; };
+		59C51D1623D4D33B00B79E45 /* FlightOffersPagedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOffersPagedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,11 +140,20 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		5928C1FB23D6677C0096A733 /* OffersViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5960E3B923D342E400586C52 /* OffersViewController.swift */,
+			);
+			path = OffersViewController;
+			sourceTree = "<group>";
+		};
 		595AA44823D4DE9A000CBB44 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5928C1FB23D6677C0096A733 /* OffersViewController */,
 				595AA44923D4DEA5000CBB44 /* FlightOfferViewController */,
-				59C51D1523D4D2DF00B79E45 /* FlightOffersViewController */,
+				59C51D1523D4D2DF00B79E45 /* FlightOffersPagedViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -187,7 +196,6 @@
 				5960E3D923D356EC00586C52 /* NetworkLayer */,
 				5960E3D823D356CA00586C52 /* Storyboard */,
 				5960E3D723D356B900586C52 /* AppDelegate */,
-				5960E3B923D342E400586C52 /* ViewController.swift */,
 				5960E3BE23D342E700586C52 /* Assets.xcassets */,
 				5960E3C323D342E700586C52 /* Info.plist */,
 			);
@@ -295,12 +303,12 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		59C51D1523D4D2DF00B79E45 /* FlightOffersViewController */ = {
+		59C51D1523D4D2DF00B79E45 /* FlightOffersPagedViewController */ = {
 			isa = PBXGroup;
 			children = (
-				59C51D1623D4D33B00B79E45 /* FlightOffersViewController.swift */,
+				59C51D1623D4D33B00B79E45 /* FlightOffersPagedViewController.swift */,
 			);
-			path = FlightOffersViewController;
+			path = FlightOffersPagedViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,7 +425,7 @@
 				5960E3E423D35AC000586C52 /* URLRouter.swift in Sources */,
 				5913294323D4F17F00AC5F33 /* UIImageView+Cache.swift in Sources */,
 				591E295D23D48D2200D2FF8F /* Message.swift in Sources */,
-				5960E3BA23D342E400586C52 /* ViewController.swift in Sources */,
+				5960E3BA23D342E400586C52 /* OffersViewController.swift in Sources */,
 				59C51D1423D4C71400B79E45 /* AnyCancelable+DisposeBag.swift in Sources */,
 				5913294723D5BC6600AC5F33 /* UIControlSubscription.swift in Sources */,
 				5960E3E123D3584200586C52 /* HTTPError.swift in Sources */,
@@ -427,7 +435,7 @@
 				591E295C23D48D2200D2FF8F /* APIError.swift in Sources */,
 				5960E3F723D3782D00586C52 /* Duration.swift in Sources */,
 				591E296323D492D400D2FF8F /* Repository.swift in Sources */,
-				59C51D1723D4D33B00B79E45 /* FlightOffersViewController.swift in Sources */,
+				59C51D1723D4D33B00B79E45 /* FlightOffersPagedViewController.swift in Sources */,
 				5960E3FB23D3782D00586C52 /* CountryTo.swift in Sources */,
 				5960E3B623D342E400586C52 /* AppDelegate.swift in Sources */,
 				5913294B23D5BD6600AC5F33 /* UIControl+CombineCompatible.swift in Sources */,

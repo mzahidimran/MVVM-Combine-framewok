@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  OffersViewController.swift
 //  Kiwi
 //
 //  Created by Muhammad Zahid Imran on 1/18/20.
@@ -9,7 +9,7 @@
 import UIKit
 import Combine
 
-class ViewController: UIViewController {
+class OffersViewController: UIViewController {
 
     @IBOutlet weak var viewOfferButton: UIButton!
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        guard let destination = segue.destination as? FlightOffersViewController else { return }
+        guard let destination = segue.destination as? FlightOffersPagedViewController else { return }
         destination.model = model
     }
     

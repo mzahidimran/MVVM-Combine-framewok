@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Offers View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Kiwi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="OffersViewController" customModule="Kiwi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
-        <!--Flight Offers View Controller-->
+        <!--Flight Offers Paged View Controller-->
         <scene sceneID="k3r-aq-mTa">
             <objects>
-                <viewController id="UPF-xS-Z4M" customClass="FlightOffersViewController" customModule="Kiwi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UPF-xS-Z4M" customClass="FlightOffersPagedViewController" customModule="Kiwi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="70V-d9-07f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,7 +143,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHh-KN-ErZ">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHh-KN-ErZ">
                                                 <rect key="frame" x="194.5" y="0.0" width="189.5" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
@@ -154,13 +154,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="o4l-gl-qlg">
                                         <rect key="frame" x="0.0" y="31" width="384" height="20.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdO-p0-9Rz">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdO-p0-9Rz">
                                                 <rect key="frame" x="0.0" y="0.0" width="189.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.3921568627" green="0.38823529410000002" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="545-Oo-Tgf">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="545-Oo-Tgf">
                                                 <rect key="frame" x="194.5" y="0.0" width="189.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.3921568627" green="0.38823529410000002" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -170,6 +170,23 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rK1-48-r1p">
+                                <rect key="frame" x="132" y="386.5" width="150" height="44"/>
+                                <color key="backgroundColor" red="0.35294117650000001" green="0.43137254899999999" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="9Wi-Aj-G1B"/>
+                                    <constraint firstAttribute="height" constant="44" id="aMl-hK-9Zf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <state key="normal" title="Book Now">
+                                    <color key="titleColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -177,6 +194,8 @@
                             <constraint firstItem="WuT-Mf-RSX" firstAttribute="trailing" secondItem="F0p-Ot-v1h" secondAttribute="trailing" id="D97-u6-Ck1"/>
                             <constraint firstItem="F0p-Ot-v1h" firstAttribute="top" secondItem="QeL-kb-bAM" secondAttribute="top" id="Pyf-dA-HrI"/>
                             <constraint firstItem="BSb-jF-Nns" firstAttribute="top" secondItem="F0p-Ot-v1h" secondAttribute="bottom" constant="25" id="Rjp-bM-GvF"/>
+                            <constraint firstItem="rK1-48-r1p" firstAttribute="top" secondItem="BSb-jF-Nns" secondAttribute="bottom" constant="60" id="a6d-qr-jDN"/>
+                            <constraint firstItem="rK1-48-r1p" firstAttribute="centerX" secondItem="QeL-kb-bAM" secondAttribute="centerX" id="bM1-aT-6q0"/>
                             <constraint firstItem="BSb-jF-Nns" firstAttribute="leading" secondItem="WuT-Mf-RSX" secondAttribute="leading" constant="15" id="j4G-Oo-Xk6"/>
                             <constraint firstItem="F0p-Ot-v1h" firstAttribute="leading" secondItem="WuT-Mf-RSX" secondAttribute="leading" id="mBQ-Vj-Rz8"/>
                         </constraints>
@@ -184,6 +203,7 @@
                     </view>
                     <connections>
                         <outlet property="bannerImageView" destination="F0p-Ot-v1h" id="rdQ-Ne-Eqx"/>
+                        <outlet property="bookNowButton" destination="rK1-48-r1p" id="dZq-55-a5Z"/>
                         <outlet property="destinationLabel" destination="uCp-6x-sC9" id="dhX-db-qTf"/>
                         <outlet property="durationLabel" destination="545-Oo-Tgf" id="pC6-nc-o0d"/>
                         <outlet property="flyDateLabel" destination="UdO-p0-9Rz" id="i77-lH-cr6"/>

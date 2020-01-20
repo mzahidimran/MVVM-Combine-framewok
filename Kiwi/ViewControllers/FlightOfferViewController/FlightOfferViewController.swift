@@ -16,6 +16,7 @@ class FlightOfferViewController: UIViewController {
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var destinationLabel: UILabel!
+    @IBOutlet weak var bookNowButton: UIButton!
     
     private(set) var flightDetailViewModel:FlightOfferDetailViewModel!
     private(set) var index:Int = 0
@@ -24,7 +25,7 @@ class FlightOfferViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateUI()
+        bindUI()
     }
     
     func set(flightDetail: FlightOfferDetailViewModel, index: Int) {
@@ -32,7 +33,7 @@ class FlightOfferViewController: UIViewController {
         self.index = index
     }
     
-    func updateUI() {
+    func bindUI() {
         flightDetailViewModel.$date.assign(to: \UILabel.text, on: self.flyDateLabel).add(to: &disposeBag)
         
         flightDetailViewModel.$duration.assign(to: \UILabel.text, on: self.durationLabel).add(to: &disposeBag)
@@ -46,7 +47,10 @@ class FlightOfferViewController: UIViewController {
             self.bannerImageView.loadImage(url: url)
         }.add(to: &disposeBag)
         
-        
+        bookNowButton.publisher(for: .touchUpInside).sink { (button) in
+            
+        }.add(to: &disposeBag)
+    
     }
     
 }

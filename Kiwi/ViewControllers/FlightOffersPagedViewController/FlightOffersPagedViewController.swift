@@ -1,5 +1,5 @@
 //
-//  FlightOffersViewController.swift
+//  FlightOffersPagedViewController.swift
 //  Kiwi
 //
 //  Created by Muhammad Zahid Imran on 1/19/20.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class FlightOffersViewController: UIViewController {
+class FlightOffersPagedViewController: UIViewController {
     
     @IBOutlet weak var pageNumberLabel: UILabel!
     
@@ -58,7 +58,7 @@ class FlightOffersViewController: UIViewController {
     }
 }
 
-extension FlightOffersViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
+extension FlightOffersPagedViewController: UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
