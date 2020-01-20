@@ -19,7 +19,7 @@ extension UIControl: CombineCompatible { }
 /// `CombineCompatible` extension for `UIControl`
 extension CombineCompatible where Self: UIControl {
     
-    /// Factory method to create publishers for `UIControl`s
+    /// Factory method to create publishers for `UIControl.Event`s
     /// - Parameter events: publisher event
     /// - returns: `UIControlPublisher` of type `self`
     func publisher(for events: UIControl.Event) -> UIControlPublisher<Self> {
