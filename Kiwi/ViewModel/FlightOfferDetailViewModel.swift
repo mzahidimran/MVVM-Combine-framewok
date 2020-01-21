@@ -15,9 +15,10 @@ class FlightOfferDetailViewModel {
     
     @Published private(set) var destination: String?
     @Published private(set) var price: String?
-    @Published private(set) var date:String?
+    @Published private(set) var date: String?
     @Published private(set) var duration: String?
     @Published private(set) var bannerURL:URL?
+    @Published private(set) var deeplink: URL?
     
     private var currencyFormatter : NumberFormatter = {
         let formatter = NumberFormatter()
@@ -40,6 +41,7 @@ class FlightOfferDetailViewModel {
         }
         
         self.bannerURL = flight.toCityBannerURL
+        self.deeplink = URL(string: flight.deep_link ?? "")
         
     }
     

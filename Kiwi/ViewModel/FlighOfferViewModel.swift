@@ -28,9 +28,9 @@ class FlighOfferViewModel {
         }
     }
     
-    @Published var flightOfferCount:Int = 0
-    @Published var error: String?
-    @Published var isLoading: Bool = false
+    @Published private(set) var flightOfferCount:Int = 0
+    @Published private(set) var error: String?
+    @Published private(set) var isLoading: Bool = false
     
     init(repository: Repository = RemoteRepository()) {
         self.repository = repository

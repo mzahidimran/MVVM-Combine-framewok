@@ -42,13 +42,19 @@ class FlightOfferViewController: UIViewController {
         
         flightDetailViewModel.$price.assign(to: \UILabel.text, on: self.priceLabel).add(to:&disposeBag)
         
-        flightDetailViewModel.$bannerURL.sink { (url) in
+        flightDetailViewModel.$bannerURL.sink {[unowned self] (url) in
             guard let url = url else { self.bannerImageView.image = UIImage(named: "photos"); return }
             self.bannerImageView.loadImage(url: url)
         }.add(to: &disposeBag)
         
-        bookNowButton.publisher(for: .touchUpInside).sink { (button) in
-            
+        flightDetailViewModel.$deeplink.sink {[unowned self] (url) in
+            self.bookNowButton.isHidden = url == nil
+        }.add(to: &disposeBag)
+        
+        bookNowButton.publisher(for: .touchUpInside).sink {[unowned self] (button) in
+            if let url  = self.flightDetailViewModel.deeplink, UIApplication.shared.canOpenURL(url)  {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
         }.add(to: &disposeBag)
     
     }
