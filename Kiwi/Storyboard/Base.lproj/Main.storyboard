@@ -117,10 +117,10 @@
             </objects>
             <point key="canvasLocation" x="1978" y="112"/>
         </scene>
-        <!--Flight Offer View Controller-->
+        <!--Flight Offer Detail View Controller-->
         <scene sceneID="6aU-1J-oIE">
             <objects>
-                <viewController storyboardIdentifier="FlightOfferViewController" id="TLC-xc-iHA" customClass="FlightOfferViewController" customModule="Kiwi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FlightOfferDetailViewController" id="TLC-xc-iHA" customClass="FlightOfferDetailViewController" customModule="Kiwi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QeL-kb-bAM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

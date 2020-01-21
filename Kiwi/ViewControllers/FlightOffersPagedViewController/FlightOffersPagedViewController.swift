@@ -30,7 +30,7 @@ class FlightOffersPagedViewController: UIViewController {
         }
         
         model.$flightOfferCount.sink {[unowned self] (count) in
-            if let pageContentViewController = self.pageController.viewControllers?.first as? FlightOfferViewController {
+            if let pageContentViewController = self.pageController.viewControllers?.first as? FlightOfferDetailViewController {
                 let index = pageContentViewController.index
                 self.updatePage(index+1, total: count)
             }
@@ -49,9 +49,9 @@ class FlightOffersPagedViewController: UIViewController {
         self.pageNumberLabel.text = "\(current) of \(total)"
     }
     
-    private func viewController(at index:Int) -> FlightOfferViewController? {
+    private func viewController(at index:Int) -> FlightOfferDetailViewController? {
         guard let flight = model.flight(at: index) else { return nil }
-        guard let offerViewController: FlightOfferViewController = Storyboard.main.instantiateViewController() else { return nil }
+        guard let offerViewController: FlightOfferDetailViewController = Storyboard.main.instantiateViewController() else { return nil }
         offerViewController.set(flightDetail: flight, index: index)
         return offerViewController
     }
@@ -61,7 +61,7 @@ extension FlightOffersPagedViewController: UIPageViewControllerDelegate, UIPageV
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
-        guard let flightOfferViewController = viewController as? FlightOfferViewController else { return nil }
+        guard let flightOfferViewController = viewController as? FlightOfferDetailViewController else { return nil }
         guard let beforeViewController = self.viewController(at: flightOfferViewController.index-1) else { return nil }
         
         return beforeViewController
@@ -69,14 +69,14 @@ extension FlightOffersPagedViewController: UIPageViewControllerDelegate, UIPageV
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
-        guard let flightOfferViewController = viewController as? FlightOfferViewController else { return nil }
+        guard let flightOfferViewController = viewController as? FlightOfferDetailViewController else { return nil }
         guard let beforeViewController = self.viewController(at: flightOfferViewController.index+1) else { return nil }
         
         return beforeViewController
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool){
-        if let pageContentViewController = self.pageController.viewControllers?.first as? FlightOfferViewController {
+        if let pageContentViewController = self.pageController.viewControllers?.first as? FlightOfferDetailViewController {
             let index = pageContentViewController.index
             self.updatePage(index+1, total: model.flightOfferCount)
         }

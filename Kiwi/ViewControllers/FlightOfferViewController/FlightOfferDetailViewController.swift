@@ -1,5 +1,5 @@
 //
-//  FlightOfferViewController.swift
+//  FlightOfferDetailViewController.swift
 //  Kiwi
 //
 //  Created by Muhammad Zahid Imran on 1/20/20.
@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 import Combine
 
-class FlightOfferViewController: UIViewController {
+
+///
+class FlightOfferDetailViewController: UIViewController {
     @IBOutlet weak var bannerImageView: UIImageView!
     @IBOutlet weak var flyDateLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!

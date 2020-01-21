@@ -21,7 +21,7 @@
 		591E296023D4911300D2FF8F /* FlighOfferViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E295F23D4911300D2FF8F /* FlighOfferViewModel.swift */; };
 		591E296323D492D400D2FF8F /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E296223D492D400D2FF8F /* Repository.swift */; };
 		5928C1FD23D66B230096A733 /* Storyboard+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5928C1FC23D66B230096A733 /* Storyboard+Helper.swift */; };
-		595AA44B23D4DEC5000CBB44 /* FlightOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595AA44A23D4DEC5000CBB44 /* FlightOfferViewController.swift */; };
+		595AA44B23D4DEC5000CBB44 /* FlightOfferDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595AA44A23D4DEC5000CBB44 /* FlightOfferDetailViewController.swift */; };
 		5960E3B623D342E400586C52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5960E3B523D342E400586C52 /* AppDelegate.swift */; };
 		5960E3B823D342E400586C52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5960E3B723D342E400586C52 /* SceneDelegate.swift */; };
 		5960E3BA23D342E400586C52 /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5960E3B923D342E400586C52 /* OffersViewController.swift */; };
@@ -72,7 +72,7 @@
 		591E295F23D4911300D2FF8F /* FlighOfferViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlighOfferViewModel.swift; sourceTree = "<group>"; };
 		591E296223D492D400D2FF8F /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		5928C1FC23D66B230096A733 /* Storyboard+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Helper.swift"; sourceTree = "<group>"; };
-		595AA44A23D4DEC5000CBB44 /* FlightOfferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOfferViewController.swift; sourceTree = "<group>"; };
+		595AA44A23D4DEC5000CBB44 /* FlightOfferDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOfferDetailViewController.swift; sourceTree = "<group>"; };
 		5960E3B223D342E400586C52 /* Kiwi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kiwi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5960E3B523D342E400586C52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5960E3B723D342E400586C52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 		595AA44923D4DEA5000CBB44 /* FlightOfferViewController */ = {
 			isa = PBXGroup;
 			children = (
-				595AA44A23D4DEC5000CBB44 /* FlightOfferViewController.swift */,
+				595AA44A23D4DEC5000CBB44 /* FlightOfferDetailViewController.swift */,
 			);
 			path = FlightOfferViewController;
 			sourceTree = "<group>";
@@ -422,7 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5960E3FC23D3782D00586C52 /* CountryFrom.swift in Sources */,
-				595AA44B23D4DEC5000CBB44 /* FlightOfferViewController.swift in Sources */,
+				595AA44B23D4DEC5000CBB44 /* FlightOfferDetailViewController.swift in Sources */,
 				5913294D23D5BF0500AC5F33 /* FlightOfferDetailViewModel.swift in Sources */,
 				5960E3E923D35B8D00586C52 /* Router.swift in Sources */,
 				5960E3F823D3782D00586C52 /* Conversion.swift in Sources */,
