@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59061C2A23D71D6C004136B5 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59061C2923D71D6C004136B5 /* Mocks.swift */; };
 		5913294123D4E8D200AC5F33 /* DateHelperFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5913294023D4E8D200AC5F33 /* DateHelperFormat.swift */; };
 		5913294323D4F17F00AC5F33 /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5913294223D4F17F00AC5F33 /* UIImageView+Cache.swift */; };
 		5913294523D4F2CB00AC5F33 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5913294423D4F2CB00AC5F33 /* ImageLoader.swift */; };
@@ -43,6 +44,7 @@
 		5960E3FF23D3782D00586C52 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5960E3F323D3782D00586C52 /* Route.swift */; };
 		59C51D1423D4C71400B79E45 /* AnyCancelable+DisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C51D1323D4C71400B79E45 /* AnyCancelable+DisposeBag.swift */; };
 		59C51D1723D4D33B00B79E45 /* FlightOffersPagedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C51D1623D4D33B00B79E45 /* FlightOffersPagedViewController.swift */; };
+		59E51DBE23D670F100AC6AAD /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E51DBD23D670F100AC6AAD /* URLProtocolMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		59061C2923D71D6C004136B5 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		5913294023D4E8D200AC5F33 /* DateHelperFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelperFormat.swift; sourceTree = "<group>"; };
 		5913294223D4F17F00AC5F33 /* UIImageView+Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
 		5913294423D4F2CB00AC5F33 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
@@ -96,6 +99,7 @@
 		5960E3F323D3782D00586C52 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		59C51D1323D4C71400B79E45 /* AnyCancelable+DisposeBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyCancelable+DisposeBag.swift"; sourceTree = "<group>"; };
 		59C51D1623D4D33B00B79E45 /* FlightOffersPagedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOffersPagedViewController.swift; sourceTree = "<group>"; };
+		59E51DBD23D670F100AC6AAD /* URLProtocolMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,8 +211,10 @@
 		5960E3CB23D342E800586C52 /* KiwiTests */ = {
 			isa = PBXGroup;
 			children = (
+				59E51DBD23D670F100AC6AAD /* URLProtocolMock.swift */,
 				5960E3CC23D342E800586C52 /* KiwiTests.swift */,
 				5960E3CE23D342E800586C52 /* Info.plist */,
+				59061C2923D71D6C004136B5 /* Mocks.swift */,
 			);
 			path = KiwiTests;
 			sourceTree = "<group>";
@@ -455,6 +461,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5960E3CD23D342E800586C52 /* KiwiTests.swift in Sources */,
+				59E51DBE23D670F100AC6AAD /* URLProtocolMock.swift in Sources */,
+				59061C2A23D71D6C004136B5 /* Mocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
