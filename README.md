@@ -1,3 +1,3 @@
-# KWTest Combine + MVVM
+# Combine + MVVM
 
 This project demonstrates iOS Combine framework with MVVM architecture.
